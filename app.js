@@ -1,4 +1,4 @@
-const apiUrl = "https://script.google.com/macros/s/AKfycbz8rqRTn_0_c3heNpJWYCAVYyqea8oEY88pG1BqOG5D8gH_zz8UZZ7C_FhXXUnI3AQZ/exec"; // Replace with your Apps Script web app URL
+const apiUrl = "https://script.google.com/macros/s/AKfycbyVS8E7VCHyJDZjgY3HKH7vOF9TKVgYOao24_luAJ1lCOB_5WPDpXLBkuIuutV-g7qP/exec"; // Replace with your Apps Script web app URL
 
 // Get all users from the Google Sheet
 function getUsers() {
