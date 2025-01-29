@@ -7,7 +7,7 @@ let reviewIndex = 0;
 // Load flashcards for the selected day
 document.getElementById("load-day").addEventListener("click", () => {
   const day = document.getElementById("day-selector").value;
-  fetch(`data/Day${day}.tsv`)
+  fetch(`data/day${day}.tsv`)
     .then(response => response.text())
     .then(data => {
       flashcards = parseFlashcards(data);
