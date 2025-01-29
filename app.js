@@ -1,66 +1,135 @@
-const apiUrl = "https://script.google.com/macros/s/AKfycbyVS8E7VCHyJDZjgY3HKH7vOF9TKVgYOao24_luAJ1lCOB_5WPDpXLBkuIuutV-g7qP/exec"; // Replace with your Apps Script web app URL
+let flashcards = [];
+let currentIndex = 0;
+let missedCards = [];
+let isReviewing = false;
+let reviewIndex = 0;
 
-// Get all users from the Google Sheet
-function getUsers() {
-  fetch(apiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ action: "getUsers" }),
-  })
-    .then(response => response.json())
+// Load flashcards for the selected day
+document.getElementById("load-day").addEventListener("click", () => {
+  const day = document.getElementById("day-selector").value;
+  fetch(`data/Day${day}.tsv`)
+    .then(response => response.text())
     .then(data => {
-      if (data.success) {
-        console.log("Users:", data.data);
-      } else {
-        console.error("Error fetching users:", data.message);
-      }
+      flashcards = parseFlashcards(data);
+      currentIndex = 0;
+      missedCards = [];
+      isReviewing = false;
+      reviewIndex = 0;
+      displayFlashcard();
     })
-    .catch(error => console.error("Error:", error));
+    .catch(error => console.error("Error loading flashcards:", error));
+});
+
+// Parse flashcards from a tab-delimited string
+function parseFlashcards(data) {
+  return data
+    .trim()
+    .split("\n")
+    .map(line => {
+      const fields = line.split("\t");
+      return {
+        subTopic: `${fields[2]}. ${fields[4]}`, // Prepend Group to Sub-topic
+        question: `${fields[3]}. ${fields[5]}`,   // Prepend Sequence to Question
+        answer: fields[6]                   // Field 6: Answer
+      };
+    });
 }
 
-// Get flashcards for a specific day
-function getFlashcards(day) {
-  fetch(apiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ action: "getFlashcards", day: day }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        console.log("Flashcards:", data.data);
-      } else {
-        console.error("Error fetching flashcards:", data.message);
-      }
-    })
-    .catch(error => console.error("Error:", error));
+// Display the current flashcard
+function displayFlashcard() {
+  if (currentIndex < flashcards.length) {
+    const card = flashcards[currentIndex];
+    document.getElementById("sub-topic").innerText = card.subTopic;
+    document.getElementById("question").innerText = card.question;
+    document.getElementById("answer").innerText = card.answer;
+    document.getElementById("answer").style.display = "none"; // Hide answer initially
+  } else {
+    console.error("No more flashcards to display!");
+  }
 }
 
-// Update user progress
-function updateUser(username, lastCompleted, nextSet) {
-  fetch(apiUrl, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      action: "updateUser",
-      username: username,
-      lastCompleted: lastCompleted,
-      nextSet: nextSet,
-    }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        console.log(data.message);
-      } else {
-        console.error("Error updating user:", data.message);
-      }
-    })
-    .catch(error => console.error("Error:", error));
+// Show the answer
+document.getElementById("show-answer").addEventListener("click", () => {
+  document.getElementById("answer").style.display = "block";
+});
+
+// Navigate to the last flashcard
+document.getElementById("last-button").addEventListener("click", () => {
+  if (!isReviewing) {
+    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+    displayFlashcard();
+  }
+});
+
+// Mark flashcard as "Knew It"
+document.getElementById("knew-it-button").addEventListener("click", () => {
+  if (!isReviewing && currentIndex === flashcards.length - 1) {
+    transitionToReview();
+  } else if (isReviewing && reviewIndex >= missedCards.length) {
+    endReview();
+  } else {
+    nextFlashcard();
+  }
+});
+
+// Mark flashcard as "Missed It"
+document.getElementById("missed-it-button").addEventListener("click", () => {
+  if (!isReviewing) {
+    missedCards.push(flashcards[currentIndex]);
+    if (currentIndex === flashcards.length - 1) {
+      transitionToReview();
+    } else {
+      currentIndex++;
+      displayFlashcard();
+    }
+  }
+});
+
+// Go to the next flashcard
+function nextFlashcard() {
+  if (isReviewing) {
+    reviewIndex++;
+    displayReviewCard();
+  } else {
+    currentIndex = (currentIndex + 1) % flashcards.length;
+    displayFlashcard();
+  }
 }
 
-// Example Usage:
-// Replace these function calls with your actual frontend logic
-getUsers();
-getFlashcards(1); // Replace '1' with the desired day number
-updateUser("testuser@gmail.com", 1, 2); // Replace with real user data
+// Transition to review mode
+function transitionToReview() {
+  isReviewing = true;
+  reviewIndex = 0;
+  toggleButtonsForReview(true);
+  displayReviewCard();
+}
+
+// Display the current review flashcard
+function displayReviewCard() {
+  if (reviewIndex < missedCards.length) {
+    const card = missedCards[reviewIndex];
+    document.getElementById("sub-topic").innerText = card.subTopic;
+    document.getElementById("question").innerText = card.question;
+    document.getElementById("answer").innerText = card.answer;
+    document.getElementById("answer").style.display = "none";
+  } else {
+    endReview();
+  }
+}
+
+// End the review process
+function endReview() {
+  toggleButtonsForReview(false);
+  document.getElementById("sub-topic").innerText = "";
+  document.getElementById("question").innerText = "Review Complete! Well done!";
+  document.getElementById("answer").style.display = "none";
+}
+
+// Toggle button visibility for review mode
+function toggleButtonsForReview(inReview) {
+  document.getElementById("last-button").style.display = inReview ? "none" : "inline-block";
+  document.getElementById("knew-it-button").style.display = inReview ? "none" : "inline-block";
+  document.getElementById("missed-it-button").style.display = inReview ? "none" : "inline-block";
+  document.getElementById("review-button").style.display = inReview ? "inline-block" : "none";
+  document.getElementById("next-button").style.display = inReview ? "inline-block" : "none";
+}
