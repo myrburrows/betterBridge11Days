@@ -8,11 +8,11 @@ Artificial Bids	9	B	2	Slam Conventions	After a 4C Gerber bid, a bid of _____ sho
 Artificial Bids	9	B	3	Slam Conventions	If there has been no natural NoTrump bid, a bid of ______ is the Blackwood convention, ______ asking.	4NT, ace
 Artificial Bids	9	B	4	Slam Conventions	After 4NT, a 5D bid shows ______ aces. After 4NT, a 5S bid shows ______ aces.	Fri Jan 03 2025 00:00:00 GMT-0600 (Central Standard Time)
 Artificial Bids	9	B	5	Slam Conventions	After 4NT and response showing Aces, a bid of ______ asks "How many Kings?".	5NT
-Artificial Bids	9	C	1	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1-of-a-major showing opening HCP and 4+ support.	Jacoby 2NT
-Artificial Bids	9	C	2	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1-of-a-major showing opening HCP and 4+ support.	2D waiting
-Artificial Bids	9	C	3	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1-of-a-major showing opening HCP and 4+ support.	Roman Key Cards
-Artificial Bids	9	C	4	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1-of-a-major showing opening HCP and 4+ support.	Michaels for minor suits
-Artificial Bids	9	C	5	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1-of-a-major showing opening HCP and 4+ support.	unusual 2NT
+Artificial Bids	9	C	1	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	Jacoby 2NT
+Artificial Bids	9	C	2	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	2D waiting
+Artificial Bids	9	C	3	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	Roman Key Cards
+Artificial Bids	9	C	4	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	Michaels for minor suits
+Artificial Bids	9	C	5	Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	unusual 2NT
 Defensive Bids	9	D	1	Direct Cuebids	A cuebid over a minor suit opening is _______, so {1D} - 2D really shows diamonds.	natural
 Defensive Bids	9	D	2	Direct Cuebids	For a cuebid over opponent's major suit opening we follow the ______ convention.	Michaels
 Defensive Bids	9	D	3	Direct Cuebids	What does the Michaels Cuebid convention indicate?	A two-suited hand

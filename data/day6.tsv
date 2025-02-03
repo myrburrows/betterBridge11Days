@@ -8,11 +8,11 @@ NoTrump Bids	6	B	2	2S Response to 1NT	Responding 2S to 1NT is a	relay to 3C = bu
 NoTrump Bids	6	B	3	2S Response to 1NT	Responding 2S to 1NT shows _____ HCP.  ______.	0-5; ALERT required
 NoTrump Bids	6	B	4	2S Response to 1NT	Responding 2S to 1NT shows a ______.	6+ card minor
 NoTrump Bids	6	B	5	2S Response to 1NT	Responding 2S to 1NT is a _______ to either minor.	signoff
-Minor Suit Bids	6	C	1	1-of-a-Minor Rebids	Minimum opener and non-forcing response, rebid ___.	pass
-Minor Suit Bids	6	C	2	1-of-a-Minor Rebids	You open 1-of-a-minor with 16-17 HCP. To a response of 1 of a major, rebid a ______ raise, _____ suit, or ______NT.	limit raise, new suit, or 2NT
-Minor Suit Bids	6	C	3	1-of-a-Minor Rebids	With a 17+ HCP 1-of-a-minor opener, you can rebid ______.	jump shift, reverse
-Minor Suit Bids	6	C	4	1-of-a-Minor Rebids	If you open 1♣ and partner responds 1♦, what does a rebid of 1♠ show?	4+ spades and a minimum hand
-Minor Suit Bids	6	C	5	1-of-a-Minor Rebids	If you open 1♣ and partner responds 1♦, what does a rebid of 1♠ show?	4+ spades and a minimum hand
+Minor Suit Bids	6	C	1	1 of a Minor Rebids	Minimum opener and non-forcing response, rebid ___.	pass
+Minor Suit Bids	6	C	2	1 of a Minor Rebids	You open 1 of a minor with 16-17 HCP. To a response of 1 of a major, rebid a ______ raise, _____ suit, or ______NT.	limit raise, new suit, or 2NT
+Minor Suit Bids	6	C	3	1 of a Minor Rebids	With a 17+ HCP 1 of a minor opener, you can rebid ______.	jump shift, reverse
+Minor Suit Bids	6	C	4	1 of a Minor Rebids	If you open 1♣ and partner responds 1♦, what does a rebid of 1♠ show?	4+ spades and a minimum hand
+Minor Suit Bids	6	C	5	1 of a Minor Rebids	If you open 1♣ and partner responds 1♦, what does a rebid of 1♠ show?	4+ spades and a minimum hand
 Artificial Bids	6	D	1	Takeout Doubles	The original Double is included in bridge bidding to say "You opponents have overbid.  I will Double to increase the scoring ______".	penalty
 Artificial Bids	6	D	2	Takeout Doubles	A Takeout Double is used more often than a penalty double.  It is artificial, forcing, and says "I have support for _____".	other suits
 Artificial Bids	6	D	3	Takeout Doubles	A Takeout Double is typically used when the opponents have opened the bidding and you want to suggest playing in an ______ suit.	unbid

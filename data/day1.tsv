@@ -8,16 +8,16 @@ NoTrump Bids	1	B	2	1NT Opening	A NoTrump opener promises 1 of 3 distributions.  
 NoTrump Bids	1	B	3	1NT Opening	You need to have stoppers in ______ suits to open NT.	3 or 4 suits
 NoTrump Bids	1	B	4	1NT Opening	May open a 5-card Major, called 5-card Major _____.	Common
 NoTrump Bids	1	B	5	1NT Opening	A 1NT opening has these advantages: describes size and shape of the opener, and opens the ______ of well-defined responses.	toolkit
-Major Suit Bids	1	C	1	1-of-a-Major Opening	The HCP range for opening 1H or 1S is ______.	12-21 HCP
-Major Suit Bids	1	C	2	1-of-a-Major Opening	Minimum suit  length to open a major suit.	5 cards in all chairs
-Major Suit Bids	1	C	3	1-of-a-Major Opening	2 cases where 1H or 1S could be "light" are if ______ chair or  very a ______ hand.	third, unbalanced
-Major Suit Bids	1	C	4	1-of-a-Major Opening	In a borderline case, evaluate with "Losing Trick Count". Open with ______ or less LTC.	six
-Major Suit Bids	1	C	5	1-of-a-Major Opening	Bid your longest suit first.  Equal suits? Bid the _____ first.	higher ranking
-Minor Suit Bids	1	D	1	1-of-a-Minor Opening	HCP range, same as 1 of a major.	12 to 21
-Minor Suit Bids	1	D	2	1-of-a-Minor Opening	1D opener promises ______ Diamonds, except a ______ hand.	4+, 4-4-3-2
-Minor Suit Bids	1	D	3	1-of-a-Minor Opening	A 1C opening promises ______ Clubs.	3+
-Minor Suit Bids	1	D	4	1-of-a-Minor Opening	Promising 3 Clubs to  open 1C and 4 Diamonds for 1D is called ______. We don't use "preferred" or "better" minor, not "short club".	standard
-Minor Suit Bids	1	D	5	1-of-a-Minor Opening	1 of a minor opening could be light in _______ or ______.	3rd chair, highly distributional
+Major Suit Bids	1	C	1	1 of a Major Opening	The HCP range for opening 1H or 1S is ______.	12-21 HCP
+Major Suit Bids	1	C	2	1 of a Major Opening	Minimum suit  length to open a major suit.	5 cards in all chairs
+Major Suit Bids	1	C	3	1 of a Major Opening	2 cases where 1H or 1S could be "light" are if ______ chair or  very a ______ hand.	third, unbalanced
+Major Suit Bids	1	C	4	1 of a Major Opening	In a borderline case, evaluate with "Losing Trick Count". Open with ______ or less LTC.	six
+Major Suit Bids	1	C	5	1 of a Major Opening	Bid your longest suit first.  Equal suits? Bid the _____ first.	higher ranking
+Minor Suit Bids	1	D	1	1 of a Minor Opening	HCP range, same as 1 of a major.	12 to 21
+Minor Suit Bids	1	D	2	1 of a Minor Opening	1D opener promises ______ Diamonds, except a ______ hand.	4+, 4-4-3-2
+Minor Suit Bids	1	D	3	1 of a Minor Opening	A 1C opening promises ______ Clubs.	3+
+Minor Suit Bids	1	D	4	1 of a Minor Opening	Promising 3 Clubs to  open 1C and 4 Diamonds for 1D is called ______. We don't use "preferred" or "better" minor, not "short club".	standard
+Minor Suit Bids	1	D	5	1 of a Minor Opening	1 of a minor opening could be light in _______ or ______.	3rd chair, highly distributional
 Declarer Play	1	E	1	Plan The Play	Plan each suit! In a NoTrump bid, count ___.	winners
 Declarer Play	1	E	2	Plan The Play	Plan each suit! In a suit contract, count ___ and then ______ (to check).	losers, winners
 Declarer Play	1	E	3	Plan The Play	To get extra tricks: A: plan to ______ cards (often via finesse)	promote

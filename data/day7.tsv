@@ -19,7 +19,7 @@ Artificial Bids	7	D	3	Takeout Doubles	If your partner makes a Takeout Double and
 Artificial Bids	7	D	4	Takeout Doubles	Opponents open a weak 2, 3, or 4.  A double is for _____.	takeout, thru 4D
 Artificial Bids	7	D	5	Takeout Doubles	A Takeout Double of opponent's weak-2 opener shows _____ HCP and ______.	12+, shortness
 Defensive Bids	7	E	1	Simple Overcalls	Besides competing for the contract, an overcall ______ opponents' bidding and suggests a ______.	disrupts, lead
-Defensive Bids	7	E	2	Simple Overcalls	A 1-of-a-suit overcall of a 1-level opener shows ______ HCP.	Sat Aug 16 2025 01:00:00 GMT-0500 (Central Daylight Time)
-Defensive Bids	7	E	3	Simple Overcalls	A 1-of-a-suit overcall of a 1-level opener shows a strong ______ suit.	5+ card
-Defensive Bids	7	E	4	Simple Overcalls	A 2-of-a-suit overcall of a 1-level opener shows ______ HCP.	Thu Oct 16 2025 01:00:00 GMT-0500 (Central Daylight Time)
-Defensive Bids	7	E	5	Simple Overcalls	A 3-of-a-suit overcall of a 1-level opener is a ______ with a 7+-card suit.	preempt
+Defensive Bids	7	E	2	Simple Overcalls	A 1 of a suit overcall of a 1-level opener shows ______ HCP.	Sat Aug 16 2025 01:00:00 GMT-0500 (Central Daylight Time)
+Defensive Bids	7	E	3	Simple Overcalls	A 1 of a suit overcall of a 1-level opener shows a strong ______ suit.	5+ card
+Defensive Bids	7	E	4	Simple Overcalls	A 2 of a suit overcall of a 1-level opener shows ______ HCP.	Thu Oct 16 2025 01:00:00 GMT-0500 (Central Daylight Time)
+Defensive Bids	7	E	5	Simple Overcalls	A 3 of a suit overcall of a 1-level opener is a ______ with a 7+-card suit.	preempt

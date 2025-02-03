@@ -8,16 +8,16 @@ NoTrump Bids	5	B	2	Jacoby Transfer	What is the benefit of using Jacoby Transfers
 NoTrump Bids	5	B	3	Jacoby Transfer	2D or 2H is a Jacoby transfer bid, and requires an ______ by Partner (opener).	Jacoby transfer, announcement
 NoTrump Bids	5	B	4	Jacoby Transfer	A 2D response promises _____, and 2H response promises _____.	5+ Hearts; 5+ Spades
 NoTrump Bids	5	B	5	Jacoby Transfer	A 2D or 2H Jacoby transfer promises _______ to ______ HCPs and a 5+-card Major suit.	0-unlimited HCP
-Major Suit Bids	5	C	1	1-of-a-Major Rebids	Responding 2NT shows ______ HCPs, no ______ and is ______.	11-12, fit, invitational
-Major Suit Bids	5	C	2	1-of-a-Major Rebids	Responding 3NT shows ______ HCPs, and no ______.	13-17, fit
-Major Suit Bids	5	C	3	1-of-a-Major Rebids	With a minimum (12-15 HCP) opener, rebid _______ to a non-forcing response	pass
-Major Suit Bids	5	C	4	1-of-a-Major Rebids	If medium opener (16-17 HCP), rebid _____ with a 6+-card suit after new suit response	limit raise (3 of your major)
-Major Suit Bids	5	C	5	1-of-a-Major Rebids	With a maximum opener (17-21 HCP), rebid ______(something forcing)	jump shift or reverse
-Minor Suit Bids	5	D	1	1-of-a-Minor Responses	1NT shows _____ HCP, no 4+-card Major and ______, but avoid 1NT over 1C if you can.	6-9, no fit
-Minor Suit Bids	5	D	2	1-of-a-Minor Responses	2NT shows _______ HCP, and is _______	11-12, invitational
-Minor Suit Bids	5	D	3	1-of-a-Minor Responses	When responding 2NT to 1-of-a-minor, it shows _______ HCP and ______.	11-12, no 4+ card major
-Minor Suit Bids	5	D	4	1-of-a-Minor Responses	3NT shows _______ HCP range, and no 4+-card major.	13-17
-Minor Suit Bids	5	D	5	1-of-a-Minor Responses	Remember the Golden Rule. Except for a weak preemptive jump, a new suit will _____ Partner to rebid.	force
+Major Suit Bids	5	C	1	1 of a Major Rebids	Responding 2NT shows ______ HCPs, no ______ and is ______.	11-12, fit, invitational
+Major Suit Bids	5	C	2	1 of a Major Rebids	Responding 3NT shows ______ HCPs, and no ______.	13-17, fit
+Major Suit Bids	5	C	3	1 of a Major Rebids	With a minimum (12-15 HCP) opener, rebid _______ to a non-forcing response	pass
+Major Suit Bids	5	C	4	1 of a Major Rebids	If medium opener (16-17 HCP), rebid _____ with a 6+-card suit after new suit response	limit raise (3 of your major)
+Major Suit Bids	5	C	5	1 of a Major Rebids	With a maximum opener (17-21 HCP), rebid ______(something forcing)	jump shift or reverse
+Minor Suit Bids	5	D	1	1 of a Minor Responses	1NT shows _____ HCP, no 4+-card Major and ______, but avoid 1NT over 1C if you can.	6-9, no fit
+Minor Suit Bids	5	D	2	1 of a Minor Responses	2NT shows _______ HCP, and is _______	11-12, invitational
+Minor Suit Bids	5	D	3	1 of a Minor Responses	When responding 2NT to 1 of a minor, it shows _______ HCP and ______.	11-12, no 4+ card major
+Minor Suit Bids	5	D	4	1 of a Minor Responses	3NT shows _______ HCP range, and no 4+-card major.	13-17
+Minor Suit Bids	5	D	5	1 of a Minor Responses	Remember the Golden Rule. Except for a weak preemptive jump, a new suit will _____ Partner to rebid.	force
 Declarer Play	5	E	1	Declarer Play	Avoid opponents best suit.  Don't let the ____ hand on lead.	danger
 Declarer Play	5	E	2	Declarer Play	_____ unless getting extra tricks by trumping in.	Draw trumps
 Declarer Play	5	E	3	Declarer Play	An ______ puts opponents on lead to force a bad lead for them.	Endplay
