@@ -1,12 +1,12 @@
 Guidelines	3	A	1	Shortage Points	Shortage points are ______ to High Card Points for distributional bridge hands.	added
 Guidelines	3	A	2	Shortage Points	Shortage points are only meaningful when a suit ______ is confirmed.	fit (combined 8+)
 Guidelines	3	A	3	Shortage Points	In our terminology, plain "______"  is used to denote High Card Points plus "shortage points" for distributional hands with a suit fit.	points
-Guidelines	3	A	4	Shortage Points	For "shortage points", add how many points for a void, a singleton, or a doubleton?	Thu May 03 2001 01:00:00 GMT-0500 (Central Daylight Time)
+Guidelines	3	A	4	Shortage Points	For "shortage points", add how many points for a void, a singleton, or a doubleton?	5 - 3 - 1
 Guidelines	3	A	5	Shortage Points	Never add shortage points for ______ bids.	NoTrump
 NoTrump Bids	3	B	1	1NT Responses in NT	2NT shows ______ HCP and no ______ Major.	8-9, 4+-card
 NoTrump Bids	3	B	2	1NT Responses in NT	3NT shows ______ HCP and no ______ Major.	10-15, 4+-card
 NoTrump Bids	3	B	3	1NT Responses in NT	4NT shows ______ HCP, a ______ hand, and is a ______ invitation.	16-17, balanced, slam
-NoTrump Bids	3	B	4	1NT Responses in NT	With a balanced hand and 7 or less HCP, just ______ Partners 1NT opening.	pass
+NoTrump Bids	3	B	4	1NT Responses in NT	With a balanced hand and 7 or less HCP, just ______ partner's 1NT opening.	pass
 NoTrump Bids	3	B	5	1NT Responses in NT	A response of 4NT to a 1NT opening asks the opener to bid 6NT with a strong 1NT but pass with a bare one. This is called ______.	quantitative
 Major Suit Bids	3	C	1	1 of a Major Responses	Responding 4 of the major shows a  _____ hand, _______ points, and _____ of the major.	weak, 6-9, 5+
 Major Suit Bids	3	C	2	1 of a Major Responses	Responding with a Jump Shift, like 1S - 3C. Alert! It shows a ______ with a _____ suit.	weak preempt, 6+-card
