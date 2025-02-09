@@ -1,47 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bridge Flashcards</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roger That  Better Bridge in 11 Days</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png"> <!-- Favicon link -->
 </head>
+
 <body>
-  <div class="header">
-    <h2>Bridge Flashcards</h2>
-    <label for="day-selector">Select a Day:</label>
-    <select id="day-selector">
-      <option value="1">Day 1</option>
-      <option value="2">Day 2</option>
-      <option value="3">Day 3</option>
-      <option value="4">Day 4</option>
-      <option value="5">Day 5</option>
-      <option value="6">Day 6</option>
-      <option value="7">Day 7</option>
-      <option value="8">Day 8</option>
-      <option value="9">Day 9</option>
-      <option value="10">Day 10</option>
-      <option value="11">Day 11</option>
-    </select>
-    <button id="load-day">Start</button>
-  </div>
+    <div class="flashcard">
+        <!-- Date Input Section -->
+        <div class="date-input-section" style="margin-bottom: 0; padding-bottom: 0;">
+            <label for="date-input" style="display: inline; margin-bottom: 0;">Enter a date (MM/DD/YY):</label>
+            <input type="text" id="date-input" placeholder="MM/DD/YY" title="Enter date as MM/DD/YY" style="margin-bottom: 0;">
+            <p id="error-message" style="color: red; margin-top: 2px; height: 16px;"></p> <!-- Error message container -->
+        </div>
 
-  <div class="flashcard">
-    <p id="sub-topic"></p>
-    <p id="question"></p>
-    <button id="show-answer" class="button button-green">Show Answer</button>
-    <p id="answer"></p>
-  </div>
+        <!-- Title Display -->
+        <h3 id="title" style="margin: 0;"> <!-- Removed vertical margin -->
+        </h3>
 
-  <div class="button-container">
-    <button id="last-button" class="button button-orange">Last</button>
-    <button id="knew-it-button" class="button button-blue">Knew It</button>
-    <button id="missed-it-button" class="button button-red">Missed It</button>
-    <button id="review-button" class="button button-blue" style="display: none;">Start Review</button>
-    <button id="next-button" class="button button-blue" style="display: none;">Next</button>
-  </div>
+        <!-- Category and Question Display -->
+        <h3 id="category" style="margin: 0;"></h3> <!-- Removed vertical margin -->
+        <p id="question"></p>
 
-  <script src="app.js"></script>
+        <button id="show-answer" onclick="showAnswer()">Show Answer</button>
+        <p id="answer" style="display: none;"></p>
+    
+        <div id="response-buttons">
+            <button id="last-btn" onclick="goToLastQuestion()">Last</button>
+            <button onclick="recordAnswer(true)" id="knew-it">Knew it</button>
+            <button onclick="recordAnswer(false)" id="missed-it">Missed it</button>
+        </div>
+        <button id="next-review" onclick="nextReviewQuestion()" style="display: none;">Next</button>
+        <button id="review-button" onclick="startReview()" style="display: none;">Review Missed Questions</button>
+    </div>
+    
+    <!-- Message Display -->
+    <div id="message" style="margin-top: 10px; font-size: 14px; color: green;"></div>
+    
+    <script src="app.js"></script>
 </body>
 </html>

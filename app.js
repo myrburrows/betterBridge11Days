@@ -1,135 +1,182 @@
-let flashcards = [];
-let currentIndex = 0;
-let missedCards = [];
-let isReviewing = false;
-let reviewIndex = 0;
+// Initialize variables
+let data = [];
+let currentQuestionIndex = 0;
+let missedQuestions = [];
+let reviewingMissedQuestions = false;
+let reviewIndex = 0; // Separate index for reviewing missed questions
 
-// Load flashcards for the selected day
-document.getElementById("load-day").addEventListener("click", () => {
-  const day = document.getElementById("day-selector").value;
-  fetch(`data/day${day}.tsv`)
-    .then(response => response.text())
-    .then(data => {
-      flashcards = parseFlashcards(data);
-      currentIndex = 0;
-      missedCards = [];
-      isReviewing = false;
-      reviewIndex = 0;
-      displayFlashcard();
-    })
-    .catch(error => console.error("Error loading flashcards:", error));
-});
+// Function to retrieve data file based on date
+function retrieveDataFile(date) {
+    const [month, day, year] = date.split('/');
+    const yearMonth = `20${year}${month}`; // Assume 20XX for the year
+    const fileName = `data/${yearMonth}/${yearMonth}${day}.txt`; // Path: data/YYYYMM/YYYYMMDD.txt
 
-// Parse flashcards from a tab-delimited string
-function parseFlashcards(data) {
-  return data
-    .trim()
-    .split("\n")
-    .map(line => {
-      const fields = line.split("\t");
-      return {
-        subTopic: `${fields[2]}. ${fields[4]}`, // Prepend Group to Sub-topic
-        question: `${fields[3]}. ${fields[5]}`,   // Prepend Sequence to Question
-        answer: fields[6]                   // Field 6: Answer
-      };
-    });
+    fetch(fileName)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`No data file found for the entered date: ${date}`);
+            }
+            return response.text();
+        })
+        .then(text => {
+            if (!text.trim()) {
+                throw new Error(`The data file for ${date} exists but is empty.`);
+            }
+            // Parse the text file into data objects
+            data = text.split('\n').map(line => {
+                const [key, category, question, answer] = line.split('\t');
+                return { key, category, question, answer };
+            });
+            currentQuestionIndex = 0; // Reset index for new data
+            missedQuestions = []; // Clear missed questions
+            reviewingMissedQuestions = false; // Reset review mode
+            document.getElementById('error-message').textContent = ''; // Clear any previous error
+            displayQuestion(); // Start displaying questions after data loads
+        })
+        .catch(error => {
+            console.error('Error loading data:', error);
+            document.getElementById('error-message').textContent = error.message; // Display error in reserved space
+        });
 }
 
-// Display the current flashcard
-function displayFlashcard() {
-  if (currentIndex < flashcards.length) {
-    const card = flashcards[currentIndex];
-    document.getElementById("sub-topic").innerText = card.subTopic;
-    document.getElementById("question").innerText = card.question;
-    document.getElementById("answer").innerText = card.answer;
-    document.getElementById("answer").style.display = "none"; // Hide answer initially
-  } else {
-    console.error("No more flashcards to display!");
-  }
-}
+// Display today's date in the input field as default
+const today = new Date();
+const smallerFormattedDate = today.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
+document.getElementById('date-input').value = smallerFormattedDate;
+retrieveDataFile(smallerFormattedDate); // Load data for today's date on app load
 
-// Show the answer
-document.getElementById("show-answer").addEventListener("click", () => {
-  document.getElementById("answer").style.display = "block";
-});
+// Event listener for Enter key in the date input field
+document.getElementById('date-input').addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        const enteredDate = document.getElementById('date-input').value.trim();
 
-// Navigate to the last flashcard
-document.getElementById("last-button").addEventListener("click", () => {
-  if (!isReviewing) {
-    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
-    displayFlashcard();
-  }
-});
+        // Validate the format first
+        const datePattern = /^\d{2}\/\d{2}\/\d{2}$/;
+        if (!datePattern.test(enteredDate)) {
+            document.getElementById('error-message').textContent = 'Invalid date format. Use MM/DD/YY.';
+            return;
+        }
 
-// Mark flashcard as "Knew It"
-document.getElementById("knew-it-button").addEventListener("click", () => {
-  if (!isReviewing && currentIndex === flashcards.length - 1) {
-    transitionToReview();
-  } else if (isReviewing && reviewIndex >= missedCards.length) {
-    endReview();
-  } else {
-    nextFlashcard();
-  }
-});
+        // Parse and validate the actual date
+        const [month, day, year] = enteredDate.split('/').map(Number);
+        const parsedDate = new Date(`20${year}`, month - 1, day); // Create a Date object
+        if (
+            parsedDate.getFullYear() !== 2000 + year || // Ensure the year matches
+            parsedDate.getMonth() !== month - 1 || // Ensure the month matches
+            parsedDate.getDate() !== day // Ensure the day matches
+        ) {
+            document.getElementById('error-message').textContent = 'Invalid date. Please enter a real calendar date.';
+            return;
+        }
 
-// Mark flashcard as "Missed It"
-document.getElementById("missed-it-button").addEventListener("click", () => {
-  if (!isReviewing) {
-    missedCards.push(flashcards[currentIndex]);
-    if (currentIndex === flashcards.length - 1) {
-      transitionToReview();
-    } else {
-      currentIndex++;
-      displayFlashcard();
+        // Clear error message and retrieve data
+        document.getElementById('error-message').textContent = '';
+        retrieveDataFile(enteredDate);
     }
-  }
 });
 
-// Go to the next flashcard
-function nextFlashcard() {
-  if (isReviewing) {
+// Display the current question and category
+function displayQuestion() {
+    const currentQuestion = reviewingMissedQuestions ? missedQuestions[reviewIndex] : data[currentQuestionIndex];
+    document.getElementById("title").textContent = "Roger That: 11 Days to Better Bridge";
+    document.getElementById('category').textContent = currentQuestion.category;
+    document.getElementById('question').textContent = `${currentQuestion.key}. ${currentQuestion.question}`;
+
+    // Reset the Show Answer button text, style, and enable it for the next question
+    const showAnswerButton = document.getElementById('show-answer');
+    showAnswerButton.textContent = "Show Answer";
+    showAnswerButton.disabled = false;
+    showAnswerButton.style.backgroundColor = "#4caf50"; // Reset to green background
+    showAnswerButton.style.color = "white"; // Reset to white text
+
+    document.getElementById('answer').textContent = currentQuestion.answer; // Store answer in answer element
+    document.getElementById('answer').style.display = 'none'; // Keep answer hidden initially
+
+    // Show or hide buttons based on whether we are in review mode
+    document.getElementById('response-buttons').style.display = reviewingMissedQuestions ? 'none' : 'block';
+    document.getElementById('next-review').style.display = reviewingMissedQuestions ? 'block' : 'none';
+    document.getElementById('review-button').style.display = 'none'; // Hide review button during regular questions
+}
+
+// Show the answer in the Show Answer button and change its style
+function showAnswer() {
+    const showAnswerButton = document.getElementById('show-answer');
+    showAnswerButton.textContent = document.getElementById('answer').textContent; // Display answer in the button
+    showAnswerButton.disabled = true; // Disable the button once the answer is shown
+    showAnswerButton.style.backgroundColor = "white"; // Change to white background
+    showAnswerButton.style.color = "black"; // Change text to black
+}
+
+// Record whether the answer was known or missed, then move to the next question
+function recordAnswer(knewIt) {
+    if (!knewIt) {
+        missedQuestions.push(data[currentQuestionIndex]);
+    }
+
+    currentQuestionIndex++;
+
+    // Check if we've finished the main set of questions
+    if (currentQuestionIndex >= data.length) {
+        if (missedQuestions.length > 0) {
+            document.getElementById('review-button').style.display = 'block'; // Show the review button if there are missed questions
+            document.getElementById('category').style.display = 'none'; // Hide question 25 and other elements
+            document.getElementById('question').style.display = 'none';
+            document.getElementById('response-buttons').style.display = 'none';
+        } else {
+            showExerciseDone(); // Call to display the Exercise Done box if no missed questions
+        }
+    } else {
+        displayQuestion();
+    }
+}
+
+// Navigate to the previous question
+function goToLastQuestion() {
+    if (currentQuestionIndex > 0) {
+        currentQuestionIndex--; // Move to the previous question
+        displayQuestion(); // Update the display
+    } else {
+        console.log('Already at the first question.'); // Optional: Log if at the first question
+    }
+}
+
+// Start reviewing missed questions
+function startReview() {
+    reviewingMissedQuestions = true;
+    reviewIndex = 0; // Reset index to start at the first missed question
+    document.getElementById('category').style.display = 'block';
+    document.getElementById('question').style.display = 'block';
+    document.getElementById('response-buttons').style.display = 'none';
+    document.getElementById('next-review').style.display = 'block';
+    document.getElementById('review-button').style.display = 'none'; // Hide the review button
+    displayQuestion();
+}
+
+// Move to the next missed question in review mode
+function nextReviewQuestion() {
     reviewIndex++;
-    displayReviewCard();
-  } else {
-    currentIndex = (currentIndex + 1) % flashcards.length;
-    displayFlashcard();
-  }
+    if (reviewIndex >= missedQuestions.length) {
+        showExerciseDone(); // Call to show completion message with missed count
+    } else {
+        displayQuestion();
+    }
 }
 
-// Transition to review mode
-function transitionToReview() {
-  isReviewing = true;
-  reviewIndex = 0;
-  toggleButtonsForReview(true);
-  displayReviewCard();
-}
+// Display an "Exercise Done" box with the number of review questions
+function showExerciseDone() {
+    document.getElementById('next-review').style.display = 'none'; // Hide Next button after review
+    const flashcardDiv = document.querySelector('.flashcard');
 
-// Display the current review flashcard
-function displayReviewCard() {
-  if (reviewIndex < missedCards.length) {
-    const card = missedCards[reviewIndex];
-    document.getElementById("sub-topic").innerText = card.subTopic;
-    document.getElementById("question").innerText = card.question;
-    document.getElementById("answer").innerText = card.answer;
-    document.getElementById("answer").style.display = "none";
-  } else {
-    endReview();
-  }
-}
-
-// End the review process
-function endReview() {
-  toggleButtonsForReview(false);
-  document.getElementById("sub-topic").innerText = "";
-  document.getElementById("question").innerText = "Review Complete! Well done!";
-  document.getElementById("answer").style.display = "none";
-}
-
-// Toggle button visibility for review mode
-function toggleButtonsForReview(inReview) {
-  document.getElementById("last-button").style.display = inReview ? "none" : "inline-block";
-  document.getElementById("knew-it-button").style.display = inReview ? "none" : "inline-block";
-  document.getElementById("missed-it-button").style.display = inReview ? "none" : "inline-block";
-  document.getElementById("review-button").style.display = inReview ? "inline-block" : "none";
-  document.getElementById("next-button").style.display = inReview ? "inline-block" : "none";
+    // Create Exercise Done box
+    const doneBox = document.createElement('div');
+    doneBox.textContent = `Exercise Done! You had ${missedQuestions.length} review questions.`;
+    doneBox.style.fontSize = "1.2em";
+    doneBox.style.marginTop = "20px";
+    doneBox.style.padding = "10px";
+    doneBox.style.border = "1px solid #ccc";
+    doneBox.style.borderRadius = "8px";
+    doneBox.style.backgroundColor = "#e0f7fa";
+    doneBox.style.color = "#00796b";
+    
+    flashcardDiv.appendChild(doneBox); // Append the message to the flashcard container
 }

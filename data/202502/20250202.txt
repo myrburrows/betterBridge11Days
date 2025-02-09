@@ -1,0 +1,25 @@
+1	Day 2: A. Losing Trick Count (LTC)	What is the Losing Trick Count used for in bridge?	Hand evaluation
+2	Day 2: A. Losing Trick Count (LTC)	When calculating Losing Trick Count (LTC), what is the maximum number of Losing Tricks per suit?	3
+3	Day 2: A. Losing Trick Count (LTC)	What is the maximum number of losers in a hand using the LTC?	12
+4	Day 2: A. Losing Trick Count (LTC)	For Losing Trick Count (LTC), generally _____ LTC to open, ______ LTC respond.	7; 8
+5	Day 2: A. Losing Trick Count (LTC)	Which type of bridge hand is the LTC most commonly used to evaluate?	Unbalanced hands
+1	Day 2: B. 2NT and 3NT Opening	2NT opening shows a range of _______ HCP, and NoTrump distribution.	20 - 21
+2	Day 2: B. 2NT and 3NT Opening	2NT opening promises ______ in 3 or all 4 suits.	stoppers
+3	Day 2: B. 2NT and 3NT Opening	These 3 artificial bids are ON in response to 2NT.	Stayman, Jacoby transfer, and Texas transfer
+4	Day 2: B. 2NT and 3NT Opening	A 3S response to partner's 2NT opening is ______.	very weak, relay to 4C
+5	Day 2: B. 2NT and 3NT Opening	3NT opening shows a range of _______ HCP, stoppers in 4 suits, and NoTrump distribution.	25 - 27
+1	Day 2: C. 1 of a Major Responses	Responding 2 of partner's opened major shows a range of _____points (HCP + shortage points) and _____ of the major.	6-10, 3+
+2	Day 2: C. 1 of a Major Responses	Responding 1NT shows a range of _______ HCP and _______ (2 or less of the opened major).	6-9, no fit
+3	Day 2: C. 1 of a Major Responses	1S over 1H opener shows _______ HCP, and ______ Spades	6+, 4+
+4	Day 2: C. 1 of a Major Responses	2H over 1S opener shows a range of _______ HCP,  and ______ Hearts	10+, 5+
+5	Day 2: C. 1 of a Major Responses	2 of a minor over 1 of a major shows ______ HCP, and ______ of the minor.	10+, 5+
+1	Day 2: D. 1 of a Minor Responses	What is the minimum point requirement to respond to a 1 of a minor opening?	6 points
+2	Day 2: D. 1 of a Minor Responses	A response of 2 of a minor over 1 of a minor promises ______ points and ______,	6-10, 4 Diamonds or 5 Clubs
+3	Day 2: D. 1 of a Minor Responses	A response of 1H over 1 of a minor shows ______ HCP and ______ Hearts.	6+, 4 or more
+4	Day 2: D. 1 of a Minor Responses	A response of 1S over 1 of a minor shows ______ HCP and ______ Spades and ______ Hearts than Spades.	6+, 4 or more, less
+5	Day 2: D. 1 of a Minor Responses	Avoid bidding _____ (showing 6-9 HCP and no biddable suit) over 1C if you can. The play will be wrong-sided if opener passes. Respond 1D and hope to make opener the declarer.	1NT
+1	Day 2: E. Probabilities	Probabilities: when an even number of cards are missing, they will ____	not split evenly
+2	Day 2: E. Probabilities	Probabilities: 6 cards missing, will split 3-3 ______ % of the time.	less than 36
+3	Day 2: E. Probabilities	Probabilities: when an odd number of cards are missing, they will ____	split close as possible to even
+4	Day 2: E. Probabilities	Probabilities: 5 cards missing, will split 3-2 ______ % of the time.	almost 68
+5	Day 2: E. Probabilities	Probabilities: 4 cards missing, the suit will split 2-2 ______ % of the time.	about 41

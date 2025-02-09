@@ -1,0 +1,25 @@
+1	Day 7: A. Added Factors in Bidding	Four factors that could encourage you to bid even though a little short of HCP that Partner would expect:	low LTC, not vulnerable, third chair, "Balancing" chair
+2	Day 7: A. Added Factors in Bidding	What does "5 - 5, come alive" mean in hand evaluation?	There is playing strength in very distributional hands, like 2 5-card suits.  Get involved in the bidding if you can
+3	Day 7: A. Added Factors in Bidding	There are many variable "it depends" elements to bridge hand evaluation.  Think of 5 "on the fly" elements that affect hand evaluation.	Bidding so far, partner agreements, vulnerability, chair, short suits, suit quality, stoppers
+4	Day 7: A. Added Factors in Bidding	After a bid by opponent then 2 passes, your Pass would close the bidding.  this is the ______	balancing chair
+5	Day 7: A. Added Factors in Bidding	If your's would be the final Pass, don't let opponents get the contract too cheaply.  Stretch your points and ______	bid if you can
+1	Day 7: B. Other Responses to 1NT	A 3C or 3D response to 1NT shows a ______-card suit and invites ______.	6+, 3NT
+2	Day 7: B. Other Responses to 1NT	A 3C or 3D response to 1NT shows ______ HCP.	5-7 HCP
+3	Day 7: B. Other Responses to 1NT	A ______ is a 4-level response to a NT opener.  It says "Game bid for sure, no slam possible".	Texas Transfer
+4	Day 7: B. Other Responses to 1NT	A 4D response to a 1NT or 2NT forces the opener to bid ______. Opener must announce it.	4H
+5	Day 7: B. Other Responses to 1NT	A 4S response to a 1NT or 2NT forces the opener to bid ______. Opener must announce it.	4S
+1	Day 7: C. Preempt Responses	In response to a weak-2 opener, only  ____  is forcing to Opener for 1 round.	2NT
+2	Day 7: C. Preempt Responses	In response to a weak-2 opener, a new suit is ____	response only, no force (RONF)
+3	Day 7: C. Preempt Responses	After Partner opens a weak-2, what does a response of 3 in that suit indicate?	Trump support but weak. Usually also preemptive
+4	Day 7: C. Preempt Responses	If partner makes a 2NT forcing inquiry after a 2-level preempt, what is the usual purpose?	To ask for more information about the preempter's hand
+5	Day 7: C. Preempt Responses	After a 3-level preempt, what does a raise of the partner’s suit indicate?	Support with a good fit
+1	Day 7: D. Takeout Doubles	To make a Takeout Double, you should have at least ______ HCP, though fewer may be acceptable with perfect distribution.	12
+2	Day 7: D. Takeout Doubles	After your partner makes a Takeout Double (it's forcing), if you have 0-9 Playing Points, you should respond at the __________ level.	lowest available
+3	Day 7: D. Takeout Doubles	If your partner makes a Takeout Double and you have 10+ Playing Points, you should __________ to show extra strength.	jump
+4	Day 7: D. Takeout Doubles	Opponents open a weak 2, 3, or 4.  A double is for _____.	takeout, thru 4D
+5	Day 7: D. Takeout Doubles	A Takeout Double of opponent's weak-2 opener shows _____ HCP and ______.	12+, shortness
+1	Day 7: E. Simple Overcalls	Besides competing for the contract, an overcall ______ opponents' bidding and suggests a ______.	disrupts, lead
+2	Day 7: E. Simple Overcalls	A 1 of a suit overcall of a 1-level opener shows ______ HCP.	8 to 16
+3	Day 7: E. Simple Overcalls	A 1 of a suit overcall of a 1-level opener shows a strong ______ suit.	5+ card
+4	Day 7: E. Simple Overcalls	A 2 of a suit overcall of a 1-level opener shows ______ HCP.	10 to 16
+5	Day 7: E. Simple Overcalls	A 3 of a suit overcall of a 1-level opener is a ______ with a 7+-card suit.	preempt

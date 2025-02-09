@@ -1,0 +1,25 @@
+1	Day 4: A. "Golden" Guidelines	If Responder has not passed or bid NT, her new suit is ______. This is known as the Golden Rule of bidding.	forcing
+2	Day 4: A. "Golden" Guidelines	A "Golden Fit" is ______  or more trumps in the combined hands.	8
+3	Day 4: A. "Golden" Guidelines	"Treat partner and opponents with respect."  This is the "Golden Rule" of ______.	ethical play
+4	Day 4: A. "Golden" Guidelines	When you have two equal suits to open the bidding, follow the Golden Rule. Always bid the ______ suit first.	higher-ranking
+5	Day 4: A. "Golden" Guidelines	For both responses and rebids, among equal length suits, bid ______.	up-the-ladder
+1	Day 4: B. Stayman Response	What is the primary purpose of the Stayman convention?	To find a 4-4 major suit fit
+2	Day 4: B. Stayman Response	2C is the Stayman convention.  No ______ by the 1NT opener is needed.	alert or announcement
+3	Day 4: B. Stayman Response	2C shows _______ HCP, and exactly a _______ Major.	8+; 4-card
+4	Day 4: B. Stayman Response	What does a 2♦ response to Stayman indicate?	No 4-card major
+5	Day 4: B. Stayman Response	What does a 2♦ rebid by the 1NT opener to Stayman indicate?	No 4-card major
+1	Day 4: C. 1 of a Major Responses	After ops overcall, a double raise is now a ______, ______ PPs and ______ of the major.	weak preempt, 4-7, 4+
+2	Day 4: C. 1 of a Major Responses	We play a ______ response of 2C to a 1 of a major opening. Opener must Alert.	2-way
+3	Day 4: C. 1 of a Major Responses	The hand may be a natural 2C response OR an ______ hand with _____ of the opened major.	opening, 4+
+4	Day 4: C. 1 of a Major Responses	The response is ______ of course, and opener should make her ______.	forcing, normal rebid
+5	Day 4: C. 1 of a Major Responses	On responder's rebid, she will ______ in the opened suit if 2C was not ______.	jump, natural
+1	Day 4: D. 1 of a Minor Responses	About half of bridge Partnerships play a "jump shift" response as weak.  The opener shout _____ it.	alert
+2	Day 4: D. 1 of a Minor Responses	Responding 1 of a minor - 3 of a minor is an ______ "limit raise".	invitational
+3	Day 4: D. 1 of a Minor Responses	Responding 1 of a minor - 3 of a minor shows ______ PPs and ______ trump.	10-12, 5+
+4	Day 4: D. 1 of a Minor Responses	A Double Raise response after opponents overcall shows ______ PPs and _____ of the minor.	5-7, 5+
+5	Day 4: D. 1 of a Minor Responses	A cuebid over opponent's overcall (like 1C - {1H} - 2H) shows a ______.	Limit raise or better
+1	Day 4: E. 2+-Level Preempts	What is the general vulnerability guideline for preemptive bids?	Be more cautious when vulnerable
+2	Day 4: E. 2+-Level Preempts	What is the key feature of the long, strong suit for a preemptive bid?	2 of top 3, or 3 of top 5
+3	Day 4: E. 2+-Level Preempts	In which positions are preemptive bids most effective?	First and third positions
+4	Day 4: E. 2+-Level Preempts	What is the general rule of thumb for preemptive bidding in terms of losing trick count?	A hand with 7 or fewer losers
+5	Day 4: E. 2+-Level Preempts	In our system, 3- and 4-level openers are "______", just meaning nothing tricky.	sound
