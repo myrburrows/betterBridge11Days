@@ -1,0 +1,25 @@
+1	Day 10: A. NT Conventions (review)	In response to a 1- or 2NT opener, we use the _____ convention to show a 4-card major.	Stayman
+2	Day 10: A. NT Conventions (review)	In response to a 1- or 2NT opener, we use the _____ convention to show a 5+-card major.	Jacoby transfer
+3	Day 10: A. NT Conventions (review)	In response to a 1- or 2NT opener, we use the _____ convention to show a game-going but weak hand with a long major.  It is preemptive.	Texas transfer
+4	Day 10: A. NT Conventions (review)	When partner opens 1NT or 2NT, and your right hand opponents interferes, we use ______ to show that was a stolen bid.	double
+5	Day 10: A. NT Conventions (review)	The Jacoby and Texas transfer should be ______ by Partner, and the "stolen bid" doubles should be ______.	announced, alerted
+1	Day 10: B. Not Used Conventions	We do not use the artificial bid ______, which is a forcing double or triple jump that cannot be a "real" suit. It shows shortness and/or control.	splinter bids
+2	Day 10: B. Not Used Conventions	We do not use the artificial bid ______, which is a rebid (by the opener) of a new minor looking for a 5-3 fit.	new minor forcing
+3	Day 10: B. Not Used Conventions	We do not use the artificial bid ______, which is an understanding that the fourth suit bid is asking partner for more information.	4th suit forcing
+4	Day 10: B. Not Used Conventions	We do not use the artificial bid ______, which is a system used after opponents interfere with partner's 1NT opening.	Lebensohl
+5	Day 10: B. Not Used Conventions	We do not use the artificial bid ______, which is used to show 3-card support after your righthand opponent interferes after a suit response.	support double
+1	Day 10: C. After Opponents Open	After opponents open 1NT, an overcall 2C, 2D, 2H, or 2S is ___	natural
+2	Day 10: C. After Opponents Open	A double after opponents open 1NT is ______.	for penalty
+3	Day 10: C. After Opponents Open	After opponent's TakeOut Double, a new suit is _______.	forcing if no jump
+4	Day 10: C. After Opponents Open	After opponent's TakeOut Double, a jump in a new suit is ______.	weak, preemptive
+5	Day 10: C. After Opponents Open	After opponents open a weak 2, 3, or 4, a double is for takeout through ______.	through 4D
+1	Day 10: D. Defensive Play	General guideline, cover a(n) ______ honor with an honor.	unsupported
+2	Day 10: D. Defensive Play	If an honor is led through you from a sequence of honors, try to cover the ______ honor with an honor.	last
+3	Day 10: D. Defensive Play	Don't break new suits. The rule of thumb is "when a defender starts a new suit, it ______".	costs the defense 1 trick
+4	Day 10: D. Defensive Play	What defensive strategy involves deliberately playing low to preserve an entry or block declarer.	Hold-Up Play
+5	Day 10: D. Defensive Play	What defensive strategy is used to make the declarer misguess which defender holds a key card?	False Carding
+1	Day 10: E. Opening Lead	In most cases, the preferred lead against both suits and NT, is Partner's ______	bid suit
+2	Day 10: E. Opening Lead	Against a NT bid, if not leading Partner's suit, the preferred opening lead is top of a ______	3-card honor sequence
+3	Day 10: E. Opening Lead	Against a NT bid, lead the top of touching honors from a ______	broken honor sequence
+4	Day 10: E. Opening Lead	Against a NT bid, if no better option, usually lead the ______ down from your longest and strongest suit.	fourth
+5	Day 10: E. Opening Lead	The opening lead of the fourth down vs NT helps Partner figure out Declarer's holding in that suit by the ______	Rule of 11
