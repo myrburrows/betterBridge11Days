@@ -1,0 +1,25 @@
+1	Day 11: A. Other Conventions (review)	In response to a 2C opening (22+ HCP or 9 unaided playing tricks), we use the ______ system to show ______.	step, HCP
+2	Day 11: A. Other Conventions (review)	Opponent's open 1S and we overcall 2S. This is the standard Michaels convention which we use for ______ only.	majors
+3	Day 11: A. Other Conventions (review)	If opponents open 1 of a major, a cuebid overcall shows the ______ and a ______.	other major, minor
+4	Day 11: A. Other Conventions (review)	If opponents open 1 of a minor, a cuebid overcall is ______. On the convention card, we mark this convention for Majors only.	natural
+5	Day 11: A. Other Conventions (review)	In place of the "Jacoby 2NT", we use the simpler 2-way response of _____ to 1 of a major to shown an opening hand with 4+ trump.	2C, must be Alerted
+1	Day 11: B. Not Used Conventions	We do not use the artificial bid ______, which is a response to 1 of a major showing opening HCP and 4+ support.	responsive double
+2	Day 11: B. Not Used Conventions	We do not use the artificial bid ______, which is a 2C response (after initial pas) showing limit raise support for Partner's major.	Drury (any variety)
+3	Day 11: B. Not Used Conventions	We do not use the artificial bid ______, which is a variation used to find 5-card majors after 2NT.	Puppet Stayman
+4	Day 11: B. Not Used Conventions	We do not use the artificial bid ______, which is an artificial opening showing a long, solid minor with nothing outside.	Gambling 3NT
+5	Day 11: B. Not Used Conventions	We do not use the artificial bid ______, which uses a single raise of a minor as strong and a double raise as weak.	Inverted Minor
+1	Day 11: C. After Opponents Open	In the pass-out seat, bid if you can (to stop a cheap contract for opponents). This is called ______.	balancing
+2	Day 11: C. After Opponents Open	Bidding 1NT over opponent's suit opener shows ______ HCP and a ______.	15-18, stopper
+3	Day 11: C. After Opponents Open	After bidding 1NT over opponent's suit opener we play "Systems ______".	On
+4	Day 11: C. After Opponents Open	Be extra cautious about overcalls when ______. The penalty for undertricks (especially if doubled) is severe.	vulnerable
+5	Day 11: C. After Opponents Open	What is the key difference between a takeout double and an overcall?	An overcall suggests a playable suit, while a takeout double asks partner to bid a suit.
+1	Day 11: D. Opening Lead	With nothing better vs NT, if an honorless suit is chosen, lead ____	M.U.D., 2nd down 
+2	Day 11: D. Opening Lead	Against a NT bid, if there is an equal choice between two suits, lead the ______.	major
+3	Day 11: D. Opening Lead	Against a suit contract, if Partner hasn't bid, the preferred lead is a ______	singleton 
+4	Day 11: D. Opening Lead	What does leading a singleton in a suit contract often suggest?	For partner to return the suit for a ruff
+5	Day 11: D. Opening Lead	What is the purpose of leading a trump against a suit contract?	To reduce the declarer’s ruffing power
+1	Day 11: E. Opening Lead	A golden rule against a suit bid is to never underlead an _____	Ace
+2	Day 11: E. Opening Lead	Versus a suit bid, if an honorless suit is chosen, lead ____. It's the same for Nt and suit defense.	M.U.D., 2nd down 
+3	Day 11: E. Opening Lead	If you think opponent's contract is a sacrifice, often _____	lead trump
+4	Day 11: E. Opening Lead	Opponents bid 1NT-3NT. Partner leads the 2♠. Partner surely has how many Spades?	four
+5	Day 11: E. Opening Lead	If no bid by Partner and no singleton, the preferred lead vs a suit bid is from an ______, even a two-card one.	honor sequence
