@@ -1,14 +1,14 @@
 1	Day 6: A. Combined Hand Evaluation	Combined hands, in NT count _____ only, add ______ in a suit contract.	HCP, shortage points
 2	Day 6: A. Combined Hand Evaluation	Combined hands, ______ points to make game in a Major or NoTrump.	25
 3	Day 6: A. Combined Hand Evaluation	Combined hands, ______ points to make a small slam (12 tricks)	33
-4	Day 6: A. Combined Hand Evaluation	Combined hands, ______ points for game in a minor, and ______ a grand slam.	29; 37
+4	Day 6: A. Combined Hand Evaluation	Combined hands, ______ points for game in a minor, and ______ a grand slam.	29, 37
 5	Day 6: A. Combined Hand Evaluation	The ______ says that the total number of tricks that can be won in a suit contract is equal to the total number of trump in the combined hands.	Law of Total Tricks
 1	Day 6: B. 2S Response to 1NT	1NT {2C overcall} 2D is a transfer 2 Hearts.  This is called ______.	systems on or "systems on over"
-2	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT is a	relay to 3C = bust
-3	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT shows _____ HCP.  ______.	0-5; ALERT required
-4	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT shows a ______.	6+ card minor
-5	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT is a _______ to either minor.	signoff
-1	Day 6: C. 1 of a Minor Rebids	Minimum opener and non-forcing response, rebid ___.	pass
+2	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT is a bust hand.  It is a relay to ______.	3C
+3	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT shows _____ HCP.  To tell opponents that it is artificial bid, an ______ is required.	0-5; alert
+4	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT shows a ______-card minor.	6+
+5	Day 6: B. 2S Response to 1NT	Responding 2S to 1NT is a signoff to ______. Opener bids 3C, and partner can pass or correct to 3D. 	either minor
+1	Day 6: C. 1 of a Minor Rebids	If you have a minimum opener and your partner makes a non-forcing response, rebid ___.	pass
 2	Day 6: C. 1 of a Minor Rebids	You open 1 of a minor with 16-17 HCP. To a response of 1 of a major, rebid a ______ raise, _____ suit, or ______NT.	limit raise, new suit, or 2NT
 3	Day 6: C. 1 of a Minor Rebids	With a 17+ HCP 1 of a minor opener, you can rebid ______.	jump shift, reverse
 4	Day 6: C. 1 of a Minor Rebids	If you open 1♣ and partner responds 1♦, what does a rebid of 1♠ show?	4+ spades and a minimum hand
@@ -17,7 +17,7 @@
 2	Day 6: D. Takeout Doubles	A Takeout Double is used more often than a penalty double.  It is artificial, forcing, and says "I have support for _____".	other suits
 3	Day 6: D. Takeout Doubles	A Takeout Double is typically used when the opponents have opened the bidding and you want to suggest playing in an ______ suit.	unbid
 4	Day 6: D. Takeout Doubles	We play that doubles at a low level (1- and 2- bids) are for takeout unless Partner has bid ______, except Negative Doubles.	her own suit
-5	Day 6: D. Takeout Doubles	A standard Takeout Double usually promises support for ______ unbid suits, and a Negative Double for ______ unbid suits, especially majors.	3; 2
+5	Day 6: D. Takeout Doubles	A standard Takeout Double usually promises support for ______ unbid suits, and a Negative Double for ______ unbid suits, especially majors.	3, 2
 1	Day 6: E. Declarer Play	To maintain the ability to get dummy on lead, keep ____	transportation
 2	Day 6: E. Declarer Play	Clearing master cards from the short-side is _____	unblocking
 3	Day 6: E. Declarer Play	What is the rule for deciding whether or not to finesse for a Queen?	8 ever, 9 never
